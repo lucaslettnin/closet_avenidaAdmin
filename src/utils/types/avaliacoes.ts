@@ -9,5 +9,5 @@ export interface AvaliacaoI {
   produtoId  : number,
   estrelas    :number,      
   comentario  :string,   
-  resposta    :String   
+  resposta    :string   
 }

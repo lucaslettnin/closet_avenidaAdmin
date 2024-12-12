@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form"
 import Cookies from "js-cookie"
 import { toast } from "sonner"
-import { useState, useEffect } from "react"
+
 
 type Inputs = {
   modelo: string
@@ -16,22 +16,9 @@ function NovoCarro() {
     register,
     handleSubmit,
     reset,
-    setFocus
   } = useForm<Inputs>()
 
-  // useEffect(() => {
-  //   async function getMarcas() {
-  //     const response = await fetch(`${process.env.NEXT_PUBLIC_URL_API}/marcas`)
-  //     const dados = await response.json()
-  //   //   setMarcas(dados)
-  //   }
-  //   getMarcas()
-  //   setFocus("modelo")
-  // }, [])
 
-//   const optionsMarca = marcas.map(marca => (
-//     <option key={marca.id} value={marca.id}>{marca.nome}</option>
-//   ))
 
   async function incluirProduto(data: Inputs) {
 
